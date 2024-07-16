@@ -1,0 +1,128 @@
+.choose_title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 100%;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.choose {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.choose_text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.choose_block {
+  background-color: #2c343e;
+  padding: 67px 24px;
+  border-radius: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    height: 600px;
+    background-color: #2c343e;
+    z-index: -1;
+  }
+}
+
+.choose_list {
+  padding: 0 24px;
+}
+
+.choose_item {
+  background-color: #0e8784;
+  border-radius: 8px;
+  padding: 72px 34px 51px 34px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    margin-bottom: 56px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/choose.svg');
+  }
+}
+
+.choose_sub_title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: #fefcf7;
+}
+
+.choose_des {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 167%;
+  text-align: center;
+  color: #fefcf7;
+}
+@media screen and (min-width: 768px) {
+  .choose_item{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding: 41px 48px 41px 70px;
+    gap: 55px;
+    &::before{
+       flex-shrink: 0;
+       margin-bottom: 0;
+    }
+  }
+  .choose_list{
+    padding: 0 58px;
+  }
+  .choose_block::after{
+    height: 372px;
+  }
+  .choose_sub_title{
+    text-align: start;
+    margin-bottom: 16px;
+  }
+  .choose_des{
+    text-align: start;
+  }
+}
+@media screen and (min-width:1100px){
+  .choose_list{
+    display: grid;
+    padding: 0 85px;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .choose_text{
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .choose_item{
+    flex-direction: column;
+    text-align: center;
+    padding: 72px 48px 48px 48px;
+  }
+  .choose_block::after{
+    height: 284px;
+  }
+}
