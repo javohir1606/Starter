@@ -1,0 +1,68 @@
+.canada_tx {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: #83888f;
+}
+
+.canada_text {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 129%;
+  text-align: center;
+  color: #333d4b;
+}
+
+.canada_img {
+  margin-top: 72px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.canada_text {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 129%;
+  text-align: center;
+  color: #333d4b;
+}
+
+.canada__tx {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  color: #333d4b;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .canada_block {
+    display: flex;
+    gap: 10px;
+  }
+
+  .canada_tx {
+    text-align: start;
+  }
+
+  .canada_img {
+    text-align: start;
+  }
+
+  .canada__tx {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .canada_block {
+    display: flex;
+    gap: 95px;
+  }
+}
